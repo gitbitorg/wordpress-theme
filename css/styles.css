@@ -25,6 +25,11 @@ body {
   height: 50px;
 }
 
+.site-logo a {
+  color: white;
+  text-decoration: none;
+}
+
 .site-header .site-logo span {
   vertical-align: top;
   line-height: 50px;
