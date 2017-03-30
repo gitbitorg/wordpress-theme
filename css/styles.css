@@ -124,3 +124,27 @@ span + i {
   font-size: 19px;
   line-height: 34px;
 }
+
+.site-footer {
+  color: white;
+  background: #2f2f2f;
+  padding-bottom: 32px;
+}
+
+.footer-link-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-link-list a {
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+}
+
+.footer-link-list a:hover {
+  color: white;
+}
+
+.site-description {
+  margin-top: 16px;
+}
