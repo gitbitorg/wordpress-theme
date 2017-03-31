@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <main>
-  <div>format: <?php echo get_post_format() ?>
   <?php
     if ( have_posts() ) : while ( have_posts() ) : the_post();
 

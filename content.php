@@ -9,7 +9,6 @@
 			<section>
 				<?php the_content(); ?>
 			</section>
-			<div>class='ms-Grid-col ms-u-sm12'</div>
 		</div>
 	</article>
 </div>
