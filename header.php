@@ -49,9 +49,45 @@
                 <span class='ms-font-xxl site-title'><?php echo get_bloginfo( 'name' ); ?></span>
               </a>
             </div>
-            <div class='ms-Grid-col ms-u-sm6 ms-u-md8'>
-              <SiteNav/>
-            </div>
+            <nav id="site-nav" class='site-nav ms-Grid-col ms-u-sm6 ms-u-md8' role="navigation">
+							<?php
+								wp_nav_menu( array(
+									'menu_class'     => 'ms-u-hiddenMdDown',
+									'theme_location' => 'nav-menu'
+								) );
+							?>
+							<button class="ms-Button ms-Button--hero ms-u-hiddenLgUp nav-panel-button">
+								<i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
+							</button>
+							<div class="ms-Panel nav-panel">
+								<button class="ms-Panel-closeButton ms-PanelAction-close nav-panel-close">
+									<i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel"></i>
+								</button>
+								<div class="ms-Panel-contentInner">
+									<p class="ms-Panel-headerText"><?php echo get_bloginfo( 'name' ); ?></p>
+									<div class="ms-Panel-content">
+										<?php
+											wp_nav_menu( array(
+												'menu_class'     => 'nav-panel-list ms-font-l',
+												'theme_location' => 'nav-menu'
+											) );
+										?>
+									</div>
+								</div>
+							</div>
+							<script type="text/javascript">
+							  var PanelExamples = document.getElementsByClassName("site-nav");
+							  for (var i = 0; i < PanelExamples.length; i++) {
+							    (function() {
+							      var PanelExampleButton = PanelExamples[i].querySelector(".nav-panel-button");
+							      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+							      PanelExampleButton.addEventListener("click", function(i) {
+							        new fabric['Panel'](PanelExamplePanel);
+							      });
+							    }());
+							  }
+							</script>
+            </nav>
           </div>
         </div>
       </div>

@@ -3,13 +3,22 @@ function fabric_scripts() {
   wp_enqueue_style( 'fabric', get_template_directory_uri() . '/css/fabric.min.css', array(), '1.4.0' );
   wp_enqueue_style( 'fabric-components', get_template_directory_uri() . '/css/fabric.components.min.css', array(), '1.4.0' );
   wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/styles.css' );
-  wp_enqueue_script( 'fabric-js', get_template_directory_uri() . 'js/fabric.min.js', array( ), '1.4.0', true );
+  wp_enqueue_script( 'fabric-js', get_template_directory_uri() . '/js/fabric.min.js', array( ), '1.4.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'fabric_scripts' );
 
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'nav-menu' => __( 'Navigation Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 
 function custom_settings_add_menu() {
   add_menu_page( 'Custom Settings', 'Custom Settings', 'manage_options', 'custom-settings', 'custom_settings_page', null, 99 );
