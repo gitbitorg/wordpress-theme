@@ -26,12 +26,8 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
-	<title><?php wp_title(); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link href="<?php bloginfo('template_directory'); ?>/css/fabric.min.css" rel="stylesheet" />
-	<link href="<?php bloginfo('template_directory'); ?>/css/fabric.components.min.css" rel="stylesheet" />
-	<link href="<?php bloginfo('template_directory'); ?>/css/styles.css" rel="stylesheet" />
 
 	<?php wp_head(); ?>
 </head>
