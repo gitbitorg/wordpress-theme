@@ -38,8 +38,20 @@ function custom_settings_page() { ?>
   </div>
 <?php }
 
+function setting_facebook() { ?>
+  <input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>" />
+<?php }
+
+function setting_linkedin() { ?>
+  <input type="text" name="linkedin" id="linkedin" value="<?php echo get_option('linkedin'); ?>" />
+<?php }
+
 function setting_twitter() { ?>
   <input type="text" name="twitter" id="twitter" value="<?php echo get_option( 'twitter' ); ?>" />
+<?php }
+
+function setting_googleplus() { ?>
+  <input type="text" name="googleplus" id="googleplus" value="<?php echo get_option('googleplus'); ?>" />
 <?php }
 
 function setting_github() { ?>
@@ -49,10 +61,16 @@ function setting_github() { ?>
 function custom_settings_page_setup() {
   add_settings_section( 'section', 'All Settings', null, 'theme-options' );
 
+  add_settings_field( 'facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section' );
+  add_settings_field( 'linkedin', 'LinkedIn URL', 'setting_linkedin', 'theme-options', 'section' );
   add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section' );
+  add_settings_field( 'googleplus', 'Google+ URL', 'setting_googleplus', 'theme-options', 'section' );
   add_settings_field( 'github', 'GitHub URL', 'setting_github', 'theme-options', 'section' );
 
+  register_setting('section', 'facebook');
+  register_setting('section', 'linkedin');
   register_setting('section', 'twitter');
+  register_setting('section', 'googleplus');
   register_setting('section', 'github');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );

@@ -171,6 +171,7 @@ span + i {
 .footer-link-list a {
   color: rgb(200, 200, 200);
   text-decoration: none;
+  line-height: 150%;
 }
 
 .footer-link-list a:hover {
