@@ -148,7 +148,7 @@ span + i {
   margin-top: 16px;
 }
 
-article {
+article.paper {
   margin-top: 24px;
   margin-bottom: 24px;
   background: white;
