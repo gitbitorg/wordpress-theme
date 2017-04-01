@@ -1,4 +1,3 @@
-<div class='ms-Grid-col ms-u-xl1 ms-u-hiddenLgDown'></div>
 <div class='ms-Grid-col ms-u-sm12 ms-u-lg6 ms-u-xl4'>
 	<div class='card card-horizontal'>
 		<a href='<?php the_permalink(); ?>'>
@@ -12,4 +11,4 @@
 		</a>
 	</div>
 </div>
-<div class='ms-Grid-col ms-u-xl1 ms-u-hiddenXlDown'></div>
+<div class='ms-Grid-col ms-u-xl2 ms-u-hiddenXlDown'></div>
