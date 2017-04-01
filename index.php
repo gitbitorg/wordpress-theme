@@ -18,8 +18,24 @@
 
 			<?php get_header(); ?>
 			<main>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<div class='app-wrapper'>
+					<div class='ms-Grid'>
+						<div class='ms-Grid-row'>
+							<?php
+								if ( have_posts() ) : while ( have_posts() ) : the_post();
+									get_template_part( 'content', get_post_format() );
+								endwhile; endif;
+							?>
+						</div>
+					</div>
+				</div>
 			</main>
+			<nav>
+				<ul class="pager">
+					<li><?php next_posts_link( 'Previous' ); ?></li>
+					<li><?php previous_posts_link( 'Next' ); ?></li>
+				</ul>
+			</nav>
 			<?php /* get_sidebar(); */ ?>
 
 <?php get_footer(); ?>

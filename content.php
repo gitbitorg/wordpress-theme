@@ -1,14 +1,15 @@
-<div class='app-wrapper'>
-	<article class='ms-Grid'>
-		<div class='content'>
-			<header class='ms-Grid-row'>
-				<h1 class="article-title ms-font-su ms-Grid-col ms-u-sm6 ms-u-md8 ms-u-lg10"><?php the_title(); ?></h1>
-				<span class="ms-fontWeight-light ms-Grid-col ms-u-sm6 ms-u-md8 ms-u-lg10"><?php the_date(); ?></span>
-			</header>
-
-			<section>
-				<?php the_content(); ?>
-			</section>
-		</div>
-	</article>
+<div class='ms-Grid-col ms-u-xl1 ms-u-hiddenLgDown'></div>
+<div class='ms-Grid-col ms-u-sm12 ms-u-lg6 ms-u-xl4'>
+	<div class='card card-horizontal'>
+		<a href='<?php the_permalink(); ?>'>
+			<div class='card-thumbnail'>
+				<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+			</div>
+			<div class='card-contents'>
+				<h2 class="ms-font-xxl"><?php the_title(); ?></h2>
+				<div class='excerpt'><?php the_excerpt(); ?></div>
+			</div>
+		</a>
+	</div>
 </div>
+<div class='ms-Grid-col ms-u-xl1 ms-u-hiddenXlDown'></div>
