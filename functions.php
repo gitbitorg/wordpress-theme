@@ -2,7 +2,7 @@
 function fabric_scripts() {
   wp_enqueue_style( 'fabric', get_template_directory_uri() . '/css/fabric.min.css', array(), '1.4.0' );
   wp_enqueue_style( 'fabric-components', get_template_directory_uri() . '/css/fabric.components.min.css', array(), '1.4.0' );
-  wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/styles.css' );
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
   wp_enqueue_script( 'fabric-js', get_template_directory_uri() . '/js/fabric.min.js', array( ), '1.4.0', true );
 }
 
