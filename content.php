@@ -11,4 +11,4 @@
 		</a>
 	</div>
 </div>
-<div class='ms-Grid-col ms-u-xl2 ms-u-hiddenXlDown'></div>
+<div class='ms-Grid-col ms-u-xl2 ms-u-hiddenLgDown'></div>
