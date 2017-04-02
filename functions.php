@@ -16,7 +16,7 @@ set_post_thumbnail_size( 500, 300, true );
 
 if ( ! isset ( $content_width) ) { $content_width = 800; }
 
-add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+add_theme_support( 'post-formats',  array ( 'aside' ) );
 
 function register_my_menus() {
   register_nav_menus(

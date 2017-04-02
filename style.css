@@ -8,11 +8,11 @@ Tags: office-ui
 
 body {
   margin: 0px;
-  background-color: #f4f4f4;
+  background-color: white;
 }
 
-body.page {
-  background-color: white;
+body.single-format-aside {
+  background-color: #f4f4f4;
 }
 
 .app-wrapper {
