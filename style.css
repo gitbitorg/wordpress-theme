@@ -11,6 +11,10 @@ body {
   background-color: #f4f4f4;
 }
 
+body.page {
+  background-color: white;
+}
+
 .app-wrapper {
   margin: 0 auto;
   max-width: 1300px;
