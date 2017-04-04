@@ -213,9 +213,14 @@ article img {
   border-radius: 5px;
 }
 
+article .attachment-featured-image {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 .article-title {
   margin-top: 0px;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .content {
