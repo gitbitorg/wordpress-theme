@@ -33,6 +33,12 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+add_theme_support( 'customize-selective-refresh-widgets' );
+
+add_theme_support( 'html5', array(
+  'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+) );
+
 function custom_settings_add_menu() {
   add_menu_page( 'Custom Settings', 'Custom Settings', 'manage_options', 'custom-settings', 'custom_settings_page', null, 99 );
 }
