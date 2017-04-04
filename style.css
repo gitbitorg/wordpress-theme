@@ -11,7 +11,7 @@ body {
   background-color: white;
 }
 
-body.single-format-status {
+body.single-format-status, .grey-background {
   background-color: #f4f4f4;
 }
 
