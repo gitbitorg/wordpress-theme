@@ -11,13 +11,14 @@ body {
   background-color: white;
 }
 
-body.single-format-status, .grey-background {
+.grey-background {
   background-color: #f4f4f4;
 }
 
 .app-wrapper {
   margin: 0 auto;
   max-width: 1300px;
+  overflow: auto;
 }
 
 .site-header {
@@ -30,6 +31,10 @@ body.single-format-status, .grey-background {
   width: 100%;
   z-index: 600;
   color: white;
+}
+
+.site-header .app-wrapper {
+  overflow: hidden;
 }
 
 .site-header .site-logo {

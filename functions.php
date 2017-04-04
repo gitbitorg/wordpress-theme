@@ -18,6 +18,11 @@ if ( ! isset ( $content_width) ) { $content_width = 800; }
 
 add_theme_support( 'post-formats',  array ( 'aside', 'status' ) );
 
+function themename_custom_post_formats_setup() {
+    add_post_type_support( 'page', 'post-formats' );
+}
+add_action( 'init', 'themename_custom_post_formats_setup' );
+
 
 function register_my_menus() {
   register_nav_menus(
