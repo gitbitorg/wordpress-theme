@@ -17,7 +17,7 @@
 
 
 <?php get_header(); ?>
-<main class='grey-background'>
+<main>
 	<div class='app-wrapper'>
 		<div class='ms-Grid'>
 			<div class='ms-Grid-row'>

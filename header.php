@@ -32,7 +32,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="body" <?php body_class(); ?>>
 	<div class='site'>
     <header class='site-header'>
       <div class='app-wrapper'>
