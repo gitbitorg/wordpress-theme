@@ -107,6 +107,19 @@ function customize_post() {
 
 add_action( 'add_meta_boxes', 'customize_post' );
 
+function customize_page() {
+	add_meta_box(
+		'your_fields_meta_box', // $id
+		'GitBit', // $title
+		'show_your_fields_meta_box', // $callback
+		'page', // $screen
+		'normal', // $context
+		'high' // $priority
+	);
+}
+
+add_action( 'add_meta_boxes', 'customize_page' );
+
 function show_your_fields_meta_box() {
 	global $post;
 		$meta = get_post_meta( $post->ID, 'gitbit', true ); ?>
