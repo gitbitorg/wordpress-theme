@@ -4,3 +4,4 @@
 * update the comment views (replace with disqus?)
 * Add sidebar support
 * Add sticky footer with social buttons
+* Move css, js, images into assets folder
