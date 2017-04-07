@@ -2,7 +2,6 @@
 <html <?php language_attributes(); ?>>
 <head>
   <?php get_template_part( 'template-parts/head/site-head' ); ?>
-  <?php get_template_part( 'template-parts/head/og-post' ); ?>
 </head>
 <body id="body" <?php body_class(); ?>>
   <div class='site'>

@@ -378,3 +378,35 @@ article .attachment-featured-image {
   background-color: #eaeaea;
   border-color: #eaeaea;
 }
+
+footer.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-container {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+
+.share-btn {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.1)
+  // margin: 5px;
+}
+
+.share-btn:hover {
+  background-color: #eaeaea;
+}
+
+.share-btn + .share-btn {
+  border-left: 1px solid rgba(0,0,0,.1)
+}
