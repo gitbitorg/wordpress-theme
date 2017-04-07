@@ -1,25 +1,23 @@
+<?php while ( have_posts() ) : the_post(); ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
   <?php get_template_part( 'template-parts/head/site-head' ); ?>
+  <?php get_template_part( 'template-parts/head/og-post', get_post_format() ); ?>
 </head>
 <body id="body" <?php body_class(); ?>>
 	<div class='site'>
     <?php get_header(); ?>
 
     <main>
-      <?php while ( have_posts() ) : the_post();
-        get_template_part( 'template-parts/post/meta' );
-        get_template_part( 'template-parts/post/content', get_post_format() );
+      <?php get_template_part( 'template-parts/post/meta' ); ?>
+      <?php get_template_part( 'template-parts/post/content', get_post_format() ); ?>
 
-
-        if ( comments_open() || get_comments_number() ) :
-          comments_template();
-        endif;
-
-      endwhile; ?>
+      <?php if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
     </main>
+
     <?php get_footer(); ?>
   </div>
 </body>
 </html>
+<?php endwhile; ?>

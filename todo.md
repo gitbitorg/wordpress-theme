@@ -5,3 +5,5 @@
 * Add sidebar support
 * Add sticky footer with social buttons
 * Move css, js, images into assets folder
+* validate opengraph
+* consider adding more fields to opengraph

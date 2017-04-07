@@ -25,4 +25,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>"/>
+
 <?php wp_head(); ?>
