@@ -1,41 +1,34 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package Fabric
- * @since Office UI 1.0
- */
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+  <?php get_template_part( 'template-parts/head/site-head' ); ?>
+</head>
+<body id="body" <?php body_class(); ?>>
+  <div class='site'>
+    <?php get_header(); ?>
 
-?>
-
-
-<?php get_header(); ?>
-<main>
-	<div class='app-wrapper'>
-		<div class='ms-Grid'>
-			<div class='ms-Grid-row'>
-				<?php
-					if ( have_posts() ) : while ( have_posts() ) : the_post();
-						get_template_part( 'template-parts/card/content', get_post_format() );
-					endwhile; endif;
-				?>
+		<main>
+			<div class='app-wrapper'>
+				<div class='ms-Grid'>
+					<div class='ms-Grid-row'>
+						<?php
+							if ( have_posts() ) : while ( have_posts() ) : the_post();
+								get_template_part( 'template-parts/card/content', get_post_format() );
+							endwhile; endif;
+						?>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</main>
-<nav class='app-wrapper'>
-	<ul class="pager">
-		<li><?php next_posts_link( 'Previous' ); ?></li>
-		<li><?php previous_posts_link( 'Next' ); ?></li>
-	</ul>
-</nav>
-<?php /* get_sidebar(); */ ?>
+		</main>
+		<nav class='app-wrapper'>
+			<ul class="pager">
+				<li><?php next_posts_link( 'Previous' ); ?></li>
+				<li><?php previous_posts_link( 'Next' ); ?></li>
+			</ul>
+		</nav>
+		<?php /* get_sidebar(); */ ?>
 
-<?php get_footer(); ?>
+		<?php get_footer(); ?>
+  </div>
+</body>
+</html>
