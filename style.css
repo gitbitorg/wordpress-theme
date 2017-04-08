@@ -11,6 +11,22 @@ body {
   background-color: white;
 }
 
+main.status {
+  background: white;
+}
+
+@media (min-width: 1024px) {
+  main.status {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  main.status + .sidebar {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
 .grey-background {
   background-color: #f4f4f4;
 }
@@ -200,8 +216,6 @@ span + i {
 }
 
 article.paper {
-  margin-top: 24px;
-  margin-bottom: 24px;
   background: white;
   overflow: hidden;
   max-width: 950px;

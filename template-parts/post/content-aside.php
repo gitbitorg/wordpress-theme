@@ -1,9 +1,9 @@
-<div class='app-wrapper'>
-	<article class='ms-Grid ms-font-xl'>
-		<div class='content'>
-			<section class='article-body'>
+<article class='ms-Grid ms-font-xl'>
+	<div class='content'>
+		<div class='article-body ms-Grid-row'>
+			<section class="ms-fontWeight-light ms-Grid-col ms-u-sm12">
 				<?php the_content(); ?>
 			</section>
 		</div>
-	</article>
-</div>
+	</div>
+</article>
