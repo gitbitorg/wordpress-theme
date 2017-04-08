@@ -39,6 +39,20 @@ add_theme_support( 'html5', array(
   'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 ) );
 
+function gitbit_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Right sidebar',
+		'id'            => 'right_sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'gitbit_widgets_init' );
+
 function custom_settings_add_menu() {
   add_menu_page( 'Custom Settings', 'Custom Settings', 'manage_options', 'custom-settings', 'custom_settings_page', null, 99 );
 }

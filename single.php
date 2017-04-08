@@ -16,7 +16,7 @@
             <?php get_template_part( 'template-parts/post/content', get_post_format() ); ?>
           </main>
           <nav class='sidebar ms-Grid-col ms-u-sm12 ms-u-xl3'>
-            This is the sidebar
+            <?php get_sidebar(); ?>
           </nav>
         </div>
         <div class='ms-Grid-row'>
