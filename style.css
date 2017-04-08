@@ -20,15 +20,19 @@ article.status {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-
-  main.status + .sidebar {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
 }
 
 .sidebar .widget {
   background: white;
+  margin-top: 24px;
+}
+
+.sidebar .widget h2 {
+  margin-top: 0px;
+}
+
+.sidebar .widget {
+  padding: 20px;
 }
 
 .grey-background {
