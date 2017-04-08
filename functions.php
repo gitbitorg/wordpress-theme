@@ -178,4 +178,104 @@ function save_your_fields_meta( $post_id ) {
 }
 add_action( 'save_post', 'save_your_fields_meta' );
 
+// *** category customization ***
+
+//add extra fields to category edit form callback function
+function extra_category_fields( $tag ) {    //check for existing featured ID
+    $t_id = $tag->term_id;
+    $cat_meta = get_option( "category_$t_id");
+?>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="subheading"><?php _e('Category subheading'); ?></label></th>
+  <td>
+    <input type="text" name="Cat_meta[subheading]" id="Cat_meta[subheading]" size="25" style="width:60%;" value="<?php echo $cat_meta['subheading'] ? $cat_meta['subheading'] : ''; ?>"><br />
+    <span class="description"><?php _e('Subheading of category'); ?></span>
+  </td>
+</tr>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="cat_Image_url"><?php _e('Category Image Url'); ?></label></th>
+  <td>
+    <input type="text" name="Cat_meta[img]" id="Cat_meta[img]" size="3" style="width:60%;" value="<?php echo $cat_meta['img'] ? $cat_meta['img'] : ''; ?>"><br />
+    <span class="description"><?php _e('Image for category: use full url with '); ?></span>
+  </td>
+</tr>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony_title"><?php _e('Testimonies title'); ?></label></th>
+  <td>
+    <input type="text" name="Cat_meta[testimony_title]" id="Cat_meta[testimony_title]" size="25" style="width:60%;" value="<?php echo $cat_meta['testimony_title'] ? $cat_meta['testimony_title'] : ''; ?>"><br />
+    <span class="description"><?php _e('Title shown above the testimonies'); ?></span>
+  </td>
+</tr>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony1_url"><?php _e('Testimony 1 url'); ?></label></th>
+  <td>
+    <textarea name="Cat_meta[testimony1_url]" id="Cat_meta[testimony1_url]" style="width:60%;"><?php echo $cat_meta['testimony1_url'] ? $cat_meta['testimony1_url'] : ''; ?></textarea><br />
+    <span class="description"><?php _e('url for testimony 1 link'); ?></span>
+  </td>
+</tr>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony1_image"><?php _e('Testimony 1 image'); ?></label></th>
+  <td>
+    <textarea name="Cat_meta[testimony1_image]" id="Cat_meta[testimony1_image]" style="width:60%;"><?php echo $cat_meta['testimony1_image'] ? $cat_meta['testimony1_image'] : ''; ?></textarea><br />
+    <span class="description"><?php _e('url pointing to testimony 1 image'); ?></span>
+  </td>
+</tr>
+
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony2_url"><?php _e('Testimony 2 url'); ?></label></th>
+  <td>
+    <textarea name="Cat_meta[testimony2_url]" id="Cat_meta[testimony2_url]" style="width:60%;"><?php echo $cat_meta['testimony2_url'] ? $cat_meta['testimony2_url'] : ''; ?></textarea><br />
+    <span class="description"><?php _e('url for testimony 1 link'); ?></span>
+  </td>
+</tr>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony2_image"><?php _e('Testimony 2 image'); ?></label></th>
+  <td>
+    <textarea name="Cat_meta[testimony2_image]" id="Cat_meta[testimony2_image]" style="width:60%;"><?php echo $cat_meta['testimony2_image'] ? $cat_meta['testimony2_image'] : ''; ?></textarea><br />
+    <span class="description"><?php _e('url pointing to testimony 2 image'); ?></span>
+  </td>
+</tr>
+
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony3_url"><?php _e('Testimony 3 url'); ?></label></th>
+  <td>
+    <textarea name="Cat_meta[testimony3_url]" id="Cat_meta[testimony3_url]" style="width:60%;"><?php echo $cat_meta['testimony3_url'] ? $cat_meta['testimony3_url'] : ''; ?></textarea><br />
+    <span class="description"><?php _e('url for testimony 3 link'); ?></span>
+  </td>
+</tr>
+<tr class="form-field">
+  <th scope="row" valign="top"><label for="testimony3_image"><?php _e('Testimony 3 image'); ?></label></th>
+  <td>
+    <textarea name="Cat_meta[testimony3_image]" id="Cat_meta[testimony3_image]" style="width:60%;"><?php echo $cat_meta['testimony3_image'] ? $cat_meta['testimony3_image'] : ''; ?></textarea><br />
+    <span class="description"><?php _e('url pointing to testimony 3 image'); ?></span>
+  </td>
+</tr>
+<?php
+}
+
+//add extra fields to category edit form hook
+add_action ( 'edit_category_form_fields', 'extra_category_fields');
+
+
+// save extra category extra fields callback function
+function save_extra_category_fileds( $term_id ) {
+    if ( isset( $_POST['Cat_meta'] ) ) {
+        $t_id = $term_id;
+        $cat_meta = get_option( "category_$t_id");
+        $cat_keys = array_keys($_POST['Cat_meta']);
+            foreach ($cat_keys as $key){
+            if (isset($_POST['Cat_meta'][$key])){
+                $cat_meta[$key] = $_POST['Cat_meta'][$key];
+            }
+        }
+        //save the option array
+        update_option( "category_$t_id", $cat_meta );
+    }
+}
+
+// save extra category extra fields hook
+add_action ( 'edited_category', 'save_extra_category_fileds');
+
+// *** END OF CATEGORY SECTION ***
+
 ?>

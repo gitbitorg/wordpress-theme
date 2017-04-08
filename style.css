@@ -11,6 +11,32 @@ body {
   background-color: white;
 }
 
+main {
+  margin-bottom: 30px;
+}
+
+main.category header .ms-Grid-col {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.category header h1 {
+  margin-bottom: 0px;
+}
+
+main.category header .subheading {
+  margin-bottom: 24px;
+}
+
+main.category header img {
+  max-width: 100%;
+}
+
+main.category section {
+  margin-top: 60px;
+}
+
 article.status {
   background: white;
 }
