@@ -44,9 +44,9 @@ function gitbit_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Right sidebar',
 		'id'            => 'right_sidebar',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
+		'before_widget' => '<section class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-xl12"><div class="widget">',
+		'after_widget'  => '</div></section>',
+		'before_title'  => '<h2 class="ms-font-xl">',
 		'after_title'   => '</h2>',
 	) );
 

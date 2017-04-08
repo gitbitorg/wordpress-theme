@@ -11,7 +11,7 @@ body {
   background-color: white;
 }
 
-main.status {
+article.status {
   background: white;
 }
 
@@ -25,6 +25,10 @@ main.status {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+}
+
+.sidebar .widget {
+  background: white;
 }
 
 .grey-background {

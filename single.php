@@ -15,9 +15,11 @@
           <main class='ms-Grid-col ms-u-sm12 ms-u-xl9 <?php echo get_post_format() ?>'>
             <?php get_template_part( 'template-parts/post/content', get_post_format() ); ?>
           </main>
-          <nav class='sidebar ms-Grid-col ms-u-sm12 ms-u-xl3'>
-            <?php get_sidebar(); ?>
-          </nav>
+          <?php if ( is_active_sidebar( 'right_sidebar' ) ) : ?>
+            <nav class='sidebar ms-Grid-col ms-u-sm12 ms-u-xl3'>
+              <?php get_sidebar(); ?>
+            </nav>
+          <?php endif; ?>
         </div>
         <div class='ms-Grid-row'>
           <aside class='ms-Grid-col ms-u-sm12 ms-u-xl9 <?php echo get_post_format() ?>'>
