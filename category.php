@@ -48,6 +48,18 @@
             </a>
           </div>
         </section>
+        <section class="posts">
+          <header class="ms-Grid-col ms-u-sm12">
+            <h2 class="ms-font-xxl">Posts</h2>
+          </header>
+          <?php
+            $args = array ( 'category' => ID, 'posts_per_page' => 10);
+            $myposts = get_posts( $args );
+            foreach( $myposts as $post ) :	setup_postdata($post);
+          ?>
+            <?php get_template_part( 'template-parts/card/content', get_post_format() ); ?>
+          <?php endforeach; ?>
+        </section>
       </main>
     </div>
 
