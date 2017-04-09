@@ -68,7 +68,6 @@ article.status {
 .app-wrapper {
   margin: 0 auto;
   max-width: 1300px;
-  overflow: auto;
 }
 
 .site-header {
@@ -79,8 +78,6 @@ article.status {
 }
 
 .site-header .app-wrapper {
-  display: flex;
-  justify-content: space-between;
   padding-left: 8px;
   padding-right: 8px;
 }
