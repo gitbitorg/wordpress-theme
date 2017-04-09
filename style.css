@@ -2,7 +2,7 @@
 Theme Name: Fabric
 Author: GitBit
 Description: Office UI
-Version: 0.0.2
+Version: 0.0.3
 Tags: office-ui
 */
 
@@ -73,22 +73,16 @@ article.status {
 
 .site-header {
   background-color: #000;
-  height: 50px;0 0 12px 0
-  left: 0;
-  padding: 0;
-  right: 0;
-  top: 0;
   width: 100%;
   z-index: 600;
   color: white;
 }
 
 .site-header .app-wrapper {
-  overflow: hidden;
-}
-
-.site-header .site-logo {
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .site-logo a {
@@ -107,39 +101,52 @@ article.status {
   margin-bottom: 5px;
 }
 
-.site-nav,
-.site-nav ul {
-  list-style: none;
-  display: flex;
-  height: 50px;
-  justify-content: flex-end;
-  margin: 0;
-}
-
-.site-nav button.nav-panel-button {
-  // width: 32px;
-  min-width: 32px;
-  color: white;
-  line-height: 46px;
-  font-weight: 300;
-  height: 46px;
-}
-
-.site-nav a {
-  text-decoration: none;
+.nav-header-list > li {
+  padding: 2px;
+  display: inline-block;
   border-bottom: 2px solid rgba(0,0,0,0);
   border-top: 2px solid rgba(0,0,0,0);
+}
+
+.nav-header-list > li:hover {
+  border-bottom-color: white;
+}
+
+.nav-header-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  list-style-type: none;
+}
+
+.nav-header-list > li > a {
+  text-decoration: none;
   display: block;
   margin-left: 12px;
   margin-right: 12px;
   color: white;
   line-height: 46px;
   font-weight: 300;
-  height: 46px;
 }
 
-.site-nav a:hover {
-  border-bottom-color: white;
+.site-nav button.nav-panel-button {
+  min-width: 32px;
+  color: white;
+  line-height: 46px;
+  font-weight: 300;
+}
+
+.nav-header-list .sub-menu {
+  padding-left: 0px;
+  display: none;
+  position: absolute;
+  background: white;
+  z-index: 900;
+}
+
+.nav-header-list li:hover .sub-menu,
+.nav-header-list li .sub-menu:hover {
+  display: block;
 }
 
 .nav-panel-list {
@@ -148,23 +155,31 @@ article.status {
   padding: 0;
 }
 
-.nav-panel-list li {
-  order-left: 2px solid rba(0,0,0,0);
+.nav-panel-list .sub-menu {
+  list-style: none;
+  padding-left: 24px;
 }
 
-.nav-panel-list li.current_page_item {
+.nav-panel-list li a {
+  border-left: 2px solid rba(0,0,0,0);
+}
+
+.nav-panel-list li.current_page_item > a {
   border-left: 2px solid #0078d7;
 }
 
-.nav-panel-list li:hover {
+.nav-panel-list li a:hover,
+.nav-header-list .sub-menu li:hover {
   background-color: rgb(248, 248, 248);
 }
 
-.nav-panel-list a {
+.nav-panel-list a,
+.nav-header-list .sub-menu a {
   line-height: 46px;
   text-decoration: none;
   display: block;
   padding: 0 24px;
+  color: #333;
 }
 
 .page-header {
