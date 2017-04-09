@@ -21,7 +21,7 @@
         </header>
         <section class="ms-Grid-row posts">
           <?php
-            $args = array ( 'category' => ID, 'posts_per_page' => 9, 'post__in' => get_option( 'sticky_posts' ));
+            $args = array ( 'category' => $cat_id, 'posts_per_page' => 9, 'post__in' => get_option( 'sticky_posts' ));
             $myposts = get_posts( $args );
             foreach( $myposts as $post ) :	setup_postdata($post);
           ?>
@@ -53,7 +53,7 @@
             <h2 class="ms-font-xxl">Posts</h2>
           </header>
           <?php
-            $args = array ( 'category' => ID, 'posts_per_page' => 10);
+            $args = array ( 'category' => $cat_id, 'posts_per_page' => 10 );
             $myposts = get_posts( $args );
             foreach( $myposts as $post ) :	setup_postdata($post);
           ?>
