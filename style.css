@@ -139,6 +139,7 @@ article.status {
   position: absolute;
   background: white;
   z-index: 900;
+  text-align: left;
 }
 
 .nav-header-list li:hover .sub-menu,
