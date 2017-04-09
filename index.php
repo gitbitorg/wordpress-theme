@@ -21,10 +21,12 @@
 			</div>
 		</main>
 		<nav class='app-wrapper'>
-			<ul class="pager">
-				<li><?php next_posts_link( 'Previous' ); ?></li>
-				<li><?php previous_posts_link( 'Next' ); ?></li>
-			</ul>
+      <div class='ms-Grid'>
+  			<ul class="pager ms-Grid-row">
+  				<li class="ms-Grid-col ms-u-sm6"><?php next_posts_link( 'Previous' ); ?></li>
+  				<li class="ms-Grid-col ms-u-sm6 ms-u-textAlignRight"><?php previous_posts_link( 'Next' ); ?></li>
+  			</ul>
+      </div>
 		</nav>
 		<?php /* get_sidebar(); */ ?>
 

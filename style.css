@@ -2,7 +2,7 @@
 Theme Name: Fabric
 Author: GitBit
 Description: Office UI
-Version: 0.0.3
+Version: 0.0.4
 Tags: office-ui
 */
 
@@ -336,9 +336,6 @@ article .attachment-featured-image {
 }
 
 .pager {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 0;
   list-style: none;
 }
@@ -444,14 +441,10 @@ footer.sticky {
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .sticky-container {
   background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
 }
 
 .share-btn {
