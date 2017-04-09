@@ -26,6 +26,10 @@ Tags: office-ui
   text-decoration: none;
 }
 
+.pull-right {
+  float: right;
+}
+
 body {
   margin: 0px;
   background-color: white;
@@ -517,6 +521,10 @@ footer.sticky {
   margin: 20vh 5vw;
   background: rgba(33, 33, 33, .70);
   padding: 35px;
+}
+
+.hero header.bg-teal {
+  background: #008272;
 }
 
 .hero header h1 {

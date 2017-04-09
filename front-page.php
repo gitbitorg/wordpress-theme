@@ -70,6 +70,36 @@
           </div>
         </div>
       </section>
+      <section class="hero" style='background-image:url("<?php echo bloginfo('template_directory'); ?>/assets/images/construction.png");'>
+        <div class='app-wrapper'>
+          <div class='ms-Grid'>
+            <div class='ms-Grid-row'>
+              <header class="ms-Grid-col ms-u-sm11 ms-u-lg6 pull-right bg-teal">
+                <h1 class="ms-font-su">How We Can Help</h1>
+                <p class="subtitle ms-font-xl">We believe your transition to Office 365 should be an easy one. With that goal in mind, GitBit is focused on providing up to date and accurate information to assist small and mid-sized companies on their transition to Office 365.</p>
+                <p class="subtitle ms-font-xl">GitBit provides information through the form of How-To “step-by-step documentation”, Blogs, and Video Learning resources.</p>
+                <p class="subtitle ms-font-xl">Have questions? Feel free to reach out to us directly via the Contact Us page and expect an answer from an expert shortly. Here at GitBit all Office 365 experts are trained, certified, and qualified professionals.</p>
+              </header>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class='app-wrapper'>
+          <div class='ms-Grid'>
+            <div class='ms-Grid-row'>
+              <div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
+                <h1 class="ms-font-su">Looking for answers…</h1>
+                <p class="ms-font-xxl">Contact our GitBit Professional Support Team with any questions you may have regarding Office 365 – whether it be during the transition, configuration, or post-setup, we’re here to help!</p>
+                <a href="/contact" class="ms-Button ms-Button--primary no-decoration">
+                  <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--Mail"></i></span>
+                  <span class="ms-Button-label">Submit Question</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <?php get_footer(); ?>
