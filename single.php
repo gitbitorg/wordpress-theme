@@ -12,7 +12,8 @@
     <div class='app-wrapper'>
       <div class='ms-Grid'>
         <div class='ms-Grid-row'>
-          <main class='ms-Grid-col ms-u-sm12 ms-u-xl9 <?php echo get_post_format() ?>'>
+          <?php $class_sidebar = is_active_sidebar('right_sidebar') ? "ms-u-sm12 ms-u-xl9" : "ms-u-sm12"; ?>
+          <main class='ms-Grid-col <?php echo $class_sidebar ?> <?php echo get_post_format() ?>'>
             <?php get_template_part( 'template-parts/post/content', get_post_format() ); ?>
           </main>
           <?php if ( is_active_sidebar( 'right_sidebar' ) ) : ?>
