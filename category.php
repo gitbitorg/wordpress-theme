@@ -12,7 +12,7 @@
     <div class="app-wrapper">
       <main class="category ms-Grid">
         <header class="ms-Grid-row">
-          <div class="ms-Grid-col ms-u-sm12 ms-u-xl6 ms-u-textAlignCenter">
+          <div class="ms-Grid-col ms-u-sm12 ms-u-xl7 ms-u-textAlignCenter">
             <h1 class="ms-font-su"><?php single_cat_title(); ?></h1>
             <div class="subheading"><span class="ms-font-xxl"><?php echo $cat_data['subheading'] ?></span></div>
             <img src="<?php echo $cat_data['img'] ?>" />
@@ -33,19 +33,13 @@
             <h2 class="ms-font-xxl"><?php echo $cat_data['testimony_title'] ?></h2>
           </header>
           <div class="testimony ms-Grid-col ms-u-sm12 ms-u-lg4 ms-u-textAlignCenter">
-            <a href="<?php echo $cat_data['testimony1_url'] ?>">
-              <img src="<?php echo $cat_data['testimony1_image'] ?>" width="200px">
-            </a>
+            <img src="<?php echo $cat_data['testimony1_image'] ?>" width="200px">
           </div>
           <div class="testimony ms-Grid-col ms-u-sm12 ms-u-lg4 ms-u-textAlignCenter">
-            <a href="<?php echo $cat_data['testimony2_url'] ?>">
-              <img src="<?php echo $cat_data['testimony2_image'] ?>" width="200px">
-            </a>
+            <img src="<?php echo $cat_data['testimony2_image'] ?>" width="200px">
           </div>
           <div class="testimony ms-Grid-col ms-u-sm12 ms-u-lg4 ms-u-textAlignCenter">
-            <a href="<?php echo $cat_data['testimony3_url'] ?>">
-              <img src="<?php echo $cat_data['testimony3_image'] ?>" width="200px">
-            </a>
+            <img src="<?php echo $cat_data['testimony3_image'] ?>" width="200px">
           </div>
         </section>
         <section class="posts">
