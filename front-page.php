@@ -70,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section class="hero" style='background-image:url("<?php echo bloginfo('template_directory'); ?>/assets/images/construction.png");'>
+      <section class="hero" style='background-image:url("<?php echo bloginfo('template_directory'); ?>/assets/images/meeting.png");'>
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
