@@ -11,7 +11,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area app-wrapper">
+<div id="comments" class="comments-area app-wrapper" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
 	<div class='ms-Grid paper'>
 		<div class='content'>
 			<div class='ms-Grid-row'>
