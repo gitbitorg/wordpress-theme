@@ -278,4 +278,10 @@ add_action ( 'edited_category', 'save_extra_category_fileds');
 
 // *** END OF CATEGORY SECTION ***
 
+
+
+function analytics_footer() {
+    get_template_part( 'template-parts/meta/google-analytics' );
+}
+add_action( 'wp_footer', 'analytics_footer' );
 ?>
