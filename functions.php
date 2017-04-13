@@ -50,6 +50,15 @@ function gitbit_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+  register_sidebar( array(
+    'name'          => 'Footer sidebar',
+    'id'            => 'footer_sidebar',
+    'before_widget' => '<section class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg3"><div class="footer-widget ms-font-l">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3 class="footer-widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+
 }
 add_action( 'widgets_init', 'gitbit_widgets_init' );
 

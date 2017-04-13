@@ -268,20 +268,21 @@ span + i {
   color: white;
   background: #2f2f2f;
   padding-bottom: 32px;
+  padding-top: 60px;
 }
 
-.footer-link-list ul {
+.site-footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-.footer-link-list a {
-  color: rgb(200, 200, 200);
+.site-footer a {
+  color: rgb(150, 150, 150);
   text-decoration: none;
   line-height: 150%;
 }
 
-.footer-link-list a:hover {
+.site-footer a:hover {
   color: white;
 }
 
