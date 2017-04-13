@@ -23,7 +23,7 @@
           <?php endif; ?>
         </div>
         <div class='ms-Grid-row'>
-          <aside class='ms-Grid-col ms-u-sm12 ms-u-xl9 <?php echo get_post_format() ?>'>
+          <aside class='ms-Grid-col ms-u-sm12 <?php echo get_post_format() ?>'>
             <?php if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
           </aside>
         </div>

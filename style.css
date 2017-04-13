@@ -65,6 +65,13 @@ article.status {
   background: white;
 }
 
+html body .content-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-rendering: optimizeLegibility;
+}
+
 @media (min-width: 1024px) {
   main.status {
     margin-top: 24px;
@@ -290,13 +297,6 @@ span + i {
   margin-top: 16px;
 }
 
-article.paper {
-  background: white;
-  overflow: hidden;
-  max-width: 950px;
-  text-rendering: optimizeLegibility;
-}
-
 .article-body {
   line-height: 32px;
 }
@@ -318,7 +318,7 @@ article .attachment-featured-image {
 }
 
 .content {
-  margin: 60px auto;
+  margin: 75px auto;
   max-width: 750px;
 }
 
@@ -391,13 +391,12 @@ article .attachment-featured-image {
   padding-right: 16px;
 }
 
-.comments-area .paper {
+.comments-area .status {
   background-color: white;
   margin-top: 24px;
   margin-bottom: 24px;
   background: white;
   overflow: hidden;
-  max-width: 950px;
   text-rendering: optimizeLegibility;
 }
 

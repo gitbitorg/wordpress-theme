@@ -1,4 +1,4 @@
-<article class='ms-Grid ms-font-xl <?php echo get_post_format() ?>' itemscope itemtype="http://schema.org/Article">
+<article class='content-container ms-Grid ms-font-xl <?php echo get_post_format() ?>' itemscope itemtype="http://schema.org/Article">
 	<div class='content'>
 		<?php get_template_part( 'template-parts/post/meta-header' ); ?>
 
