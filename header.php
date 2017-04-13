@@ -15,7 +15,7 @@
             </a>
           </div>
         </section>
-        <section class="ms-Grid-col ms-u-sm9 ms-u-textAlignRight">
+        <section class="ms-Grid-col ms-u-sm9 ms-u-textAlignRight ms-font-l">
           <nav id="site-nav" class='site-nav' role="navigation">
             <?php
               wp_nav_menu( array(
