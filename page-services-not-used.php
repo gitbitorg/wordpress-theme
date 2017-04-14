@@ -123,10 +123,4 @@
 #services-page .package-button * {
   display: block;
 }
-.color-grey {
-  color: #777;
-}
-.no-margin {
-  margin: 0px;
-}
 </style>

@@ -26,6 +26,14 @@ Tags: office-ui
   text-decoration: none;
 }
 
+.color-grey {
+    color: #777;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
 .pull-right {
   float: right;
 }
