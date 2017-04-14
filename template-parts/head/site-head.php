@@ -27,4 +27,11 @@
 
 <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>"/>
 
+<script>
+  (function(e,t,n,c,r){c=e.createElement(t),c.async=1,c.src=n,
+  r=e.getElementsByTagName(t)[0],r.parentNode.insertBefore(c,r)})
+  (document,"script","https://cdn.quicksprout.com/qs.js");
+</script>
+
+
 <?php wp_head(); ?>
