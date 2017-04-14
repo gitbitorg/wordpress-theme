@@ -16,7 +16,7 @@ set_post_thumbnail_size( 500, 300, true );
 
 if ( ! isset ( $content_width) ) { $content_width = 800; }
 
-add_theme_support( 'post-formats',  array ( 'aside', 'status' ) );
+add_theme_support( 'post-formats',  array ( 'aside', 'status', 'quote' ) );
 
 function themename_custom_post_formats_setup() {
     add_post_type_support( 'page', 'post-formats' );
