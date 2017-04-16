@@ -12,7 +12,7 @@
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
-              <header class="ms-Grid-col ms-u-sm11 ms-u-lg6">
+              <header class="ms-Grid-col ms-u-sm11 ms-u-lg6 grey">
                 <h1 class="ms-font-su"><?php echo get_bloginfo('name'); ?></h1>
                 <span class="subtitle ms-font-xxl"><?php echo get_bloginfo( 'description' ); ?></span>
               </header>
@@ -74,7 +74,7 @@
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
-              <header class="ms-Grid-col ms-u-sm11 ms-u-lg6 pull-right bg-teal">
+              <header class="ms-Grid-col ms-u-sm11 ms-u-lg6 pull-right bg-teal color-white">
                 <h2 class="ms-font-su" style="margin-top:0px;">How We Can Help</h2>
                 <p class="subtitle ms-font-xl">We believe your transition to Office 365 should be an easy one. With that goal in mind, GitBit is focused on providing up to date and accurate information to assist small and mid-sized companies on their transition to Office 365.</p>
                 <p class="subtitle ms-font-xl">GitBit provides information through the form of How-To “step-by-step documentation”, Blogs, and Video Learning resources.</p>

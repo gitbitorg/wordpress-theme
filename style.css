@@ -22,6 +22,10 @@ Tags: office-ui
   color: #0078d7;
 }
 
+.color-white {
+    color: white;
+}
+
 .no-decoration {
   text-decoration: none;
 }
@@ -32,6 +36,10 @@ Tags: office-ui
 
 .no-margin {
     margin: 0px;
+}
+
+.margins {
+    margin: 40px;
 }
 
 .pull-right {
@@ -521,7 +529,6 @@ footer.sticky {
   padding: 15px;
   box-sizing: border-box;
   border: 1px solid rgba(0,0,0,.1)
-  // margin: 5px;
 }
 
 .share-btn:hover {
@@ -541,10 +548,13 @@ footer.sticky {
 }
 
 .hero header {
-  color: white;
   margin: 20vh 5vw;
-  background: rgba(33, 33, 33, .70);
   padding: 35px;
+}
+
+.hero header.grey {
+    background: rgba(33, 33, 33, .70);
+    color: white;
 }
 
 .hero header.bg-teal {
@@ -557,4 +567,12 @@ footer.sticky {
 
 .homepage section + section {
   margin-top: 60px;
+}
+
+blockquote .quotemark {
+    position:absolute;
+}
+
+blockquote .quote {
+    margin-left:48px;
 }
