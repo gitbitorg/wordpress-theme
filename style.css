@@ -42,6 +42,14 @@ Tags: office-ui
     margin: 40px;
 }
 
+a.no-style {
+    text-decoration: inherit;
+}
+
+a.no-style:hover {
+    color: inherit;
+}
+
 .pull-right {
   float: right;
 }
@@ -547,6 +555,11 @@ footer.sticky {
   background-size: cover;
 }
 
+.hero.grey-background {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
 .hero header {
   margin: 20vh 5vw;
   padding: 35px;
@@ -575,4 +588,56 @@ blockquote .quotemark {
 
 blockquote .quote {
     margin-left:48px;
+}
+
+.tile-container {
+    text-align: center;
+}
+
+.tile {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+.tile-overlay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.tile.with-link:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tile:hover .tile-overlay {
+    display: block;
+}
+
+.tile-250 {
+    width: 250px;
+}
+
+.tile-image {
+    text-align: center;
+    font-size: 96px;
+    height: 180px;
+    vertical-align: middle;
+}
+
+.tile-image i, .tile-image img {
+    margin: 42px;
+}
+
+.tile-caption {
+    border-top: 1px solid #eee;
+    padding: 20px;
 }

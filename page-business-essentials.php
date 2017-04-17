@@ -109,7 +109,7 @@
 							<p class="ms-font-xxl color-green"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></p>
 						</div>
 						<div class="ms-Grid-col ms-u-sm11">
-							<p class="ms-font-xl">Optimize operations with an all-in-one approach that will empower your employees and increase profits.</p>
+							<p class="ms-font-xl">The perfect all-in-one solution that will optimize your firm and increase profits.</p>
 						</div>
 					</div>
 					<div class='ms-Grid-row'>
@@ -125,7 +125,79 @@
 							<p class="ms-font-xxl color-green"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></p>
 						</div>
 						<div class="ms-Grid-col ms-u-sm11">
-							<p class="ms-font-xl">Employees love learning faster ways to do their jobs. Our knowledge base, training, and webinars will drive your business to the top of the pack.</p>
+							<p class="ms-font-xl">Improve your ROI with education, knowledge base articles, and expert support for the tools you're using.</p>
+						</div>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </section>
+	  <section class="hero grey-background">
+        <div class='app-wrapper'>
+          <div class='ms-Grid'>
+			<div class="ms-Grid-row">
+				<div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
+					<h2 class="ms-font-xxl">Features</h2>
+				</div>
+			</div>
+            <div class='ms-Grid-row'>
+				<div class="ms-Grid-col ms-u-sm12">
+					<div class="tile-container">
+						<div class="tile tile-250 with-link">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--Mail color-green" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Secure email</h3>
+							</div>
+						</div>
+
+						<div class="tile tile-250 with-link">
+							<div class="tile-image">
+								<img src="<?php echo bloginfo('template_directory'); ?>/assets/images/meeting-iconx96.png" alt="Microsoft OneDrive" />
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Online meetings</h3>
+							</div>
+						</div>
+
+						<div class="tile tile-250 with-link">
+							<div class="tile-image">
+								<img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/png/onedrive_96x1.png" alt="Microsoft OneDrive" />
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Anywhere documents</h3>
+							</div>
+						</div>
+
+						<div class="tile tile-250 with-link">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--ChatInviteFriend" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Real time team chat</h3>
+							</div>
+						</div>
+
+						<div class="tile tile-250 with-link">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--SocialListeningLogo color-teal" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Private social network</h3>
+							</div>
+						</div>
+
+						<div class="tile tile-250 with-link">
+							<a href="#office-hero" class="no-style">
+								<div class="tile-image">
+									<img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/png/office_96x1.png" alt="Microsoft OneDrive" />
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Microsoft Office</h3>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -135,7 +207,7 @@
       </section>
 
 
-      <section class="hero">
+      <section class="hero" id="office-hero">
         <div class='app-wrapper'>
           <div class='ms-Grid'>
 			<div class="ms-Grid-row">
