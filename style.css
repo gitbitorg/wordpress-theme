@@ -26,6 +26,10 @@ Tags: office-ui
     color: white;
 }
 
+.bg-teal {
+    background: #008272;
+}
+
 .no-decoration {
   text-decoration: none;
 }
@@ -44,6 +48,7 @@ Tags: office-ui
 
 a.no-style {
     text-decoration: inherit;
+    color: inherit;
 }
 
 a.no-style:hover {
@@ -570,10 +575,6 @@ footer.sticky {
     color: white;
 }
 
-.hero header.bg-teal {
-  background: #008272;
-}
-
 .hero header h1 {
   margin-top: 0px;
 }
@@ -640,4 +641,31 @@ blockquote .quote {
 .tile-caption {
     border-top: 1px solid #eee;
     padding: 20px;
+}
+
+.fiber-ninja-form .nf-before-form-content {
+    display: none;
+}
+
+.fiber-ninja-form .label-above .nf-field-label {
+    margin-bottom: 5px;
+}
+
+.ms-Button.ms-font-xl {
+    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid grey;
+    background-color: rgb(244, 244, 244);
+}
+
+header.fixed .logo {
+    margin-top: 3px;
 }

@@ -145,52 +145,62 @@
 				<div class="ms-Grid-col ms-u-sm12">
 					<div class="tile-container">
 						<div class="tile tile-250 with-link">
-							<div class="tile-image">
-								<i class="ms-Icon ms-Icon--Mail color-green" aria-hidden="true"></i>
-							</div>
-							<div class="tile-caption">
-								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Secure email</h3>
-							</div>
+							<a href="/business-essentials/secure-email" class="no-style">
+								<div class="tile-image">
+									<i class="ms-Icon ms-Icon--Mail color-green" aria-hidden="true"></i>
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Secure email</h3>
+								</div>
+							</a>
 						</div>
 
 						<div class="tile tile-250 with-link">
-							<div class="tile-image">
-								<img src="<?php echo bloginfo('template_directory'); ?>/assets/images/meeting-iconx96.png" alt="Microsoft OneDrive" />
-							</div>
-							<div class="tile-caption">
-								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Online meetings</h3>
-							</div>
+							<a href="/business-essentials/online-meetings" class="no-style">
+								<div class="tile-image">
+									<img src="<?php echo bloginfo('template_directory'); ?>/assets/images/meeting-iconx96.png" alt="Microsoft OneDrive" />
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Online meetings</h3>
+								</div>
+							</a>
 						</div>
 
 						<div class="tile tile-250 with-link">
-							<div class="tile-image">
-								<img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/png/onedrive_96x1.png" alt="Microsoft OneDrive" />
-							</div>
-							<div class="tile-caption">
-								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Anywhere documents</h3>
-							</div>
+							<a href="/business-essentials/anywhere-documents" class="no-style">
+								<div class="tile-image">
+									<img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/png/onedrive_96x1.png" alt="Microsoft OneDrive" />
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Anywhere documents</h3>
+								</div>
+							</a>
 						</div>
 
 						<div class="tile tile-250 with-link">
-							<div class="tile-image">
-								<i class="ms-Icon ms-Icon--ChatInviteFriend" aria-hidden="true"></i>
-							</div>
-							<div class="tile-caption">
-								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Real time team chat</h3>
-							</div>
+							<a href="/business-essentials/real-time-team-chat" class="no-style">
+								<div class="tile-image">
+									<i class="ms-Icon ms-Icon--ChatInviteFriend" aria-hidden="true"></i>
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Real time team chat</h3>
+								</div>
+							</a>
 						</div>
 
 						<div class="tile tile-250 with-link">
-							<div class="tile-image">
-								<i class="ms-Icon ms-Icon--SocialListeningLogo color-teal" aria-hidden="true"></i>
-							</div>
-							<div class="tile-caption">
-								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Private social network</h3>
-							</div>
+							<a href="/business-essentials/private-social-network" class="no-style">
+								<div class="tile-image">
+									<i class="ms-Icon ms-Icon--SocialListeningLogo color-teal" aria-hidden="true"></i>
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Private social network</h3>
+								</div>
+							</a>
 						</div>
 
 						<div class="tile tile-250 with-link">
-							<a href="#office-hero" class="no-style">
+							<a href="/business-essentials/microsoft-office" class="no-style">
 								<div class="tile-image">
 									<img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/png/office_96x1.png" alt="Microsoft OneDrive" />
 								</div>
@@ -205,23 +215,71 @@
           </div>
         </div>
       </section>
-
-
-      <section class="hero" id="office-hero">
+      <section class="hero" id="benefits-hero">
         <div class='app-wrapper'>
           <div class='ms-Grid'>
 			<div class="ms-Grid-row">
 				<div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
-					<h2 class="ms-font-xxl">Our enhanced Microsoft Office helps your team do their best work</h2>
+					<h2 class="ms-font-xxl">Why people choose Business Essentials</h2>
 				</div>
 			</div>
             <div class='ms-Grid-row'>
-				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
-					<img class="hero-image" src="<?php echo bloginfo('template_directory'); ?>/assets/images/office-suite.jpg" alt="image of Microsoft Office enhanced" width="100%"/>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Secure</h3>
+							<div class='excerpt'><p>Get better protection and security across devices and apps, which is simple to set up and always up to date. We safeguard and protect email, files, and apps.</p></div>
+						</div>
+					</div>
 				</div>
-              <div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
-                <p class="subtitle ms-font-xl">Business Essentials is built on top of an enhanced Microsoft Office. <strong class="color-o365">Co-authoring</strong> in Word, PowerPoint, and OneNote means your team can simultaneously edit the same document from different devices in different locations and see where others are working in the document and their edits as they happen. <strong class="color-o365">Intelligent Inbox</strong> prioritizes your important emails, helping you stay focused and removing the clutter.</p>
-              </div>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Financially backed SLA</h3>
+							<div class='excerpt'><p>Get peace of mind knowing your services are available when you need them with a financially-backed 99.9% uptime service level agreement.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Simplified IT Management</h3>
+							<div class='excerpt'><p>Reduce headaches by reducing your IT infrastructure. Content lives safely in globally distributed datacenters with continuous backup and disaster recovery abilities.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Get work done from anywhere</h3>
+							<div class='excerpt'><p>Wherever your people are, online or offline, they can get to-and work with-the most up-to-date versions of the files and tools they need to get things done. And they can do it on virtually any device.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Work better together</h3>
+							<div class='excerpt'><p>business-class email, shared calendars, IM, web conferencing, and access to the most up-to-date documents stored in the cloud. You can work together in real time without compromising security.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Reduce your capital expenditure</h3>
+							<div class='excerpt'><p>Office 365 is available as a simple monthly subscription. Avoid large up-front costs for new software while moving the cost of IT from capital to operating expense.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class='ms-Grid-col ms-u-sm12 ms-u-lg4'>
+					<div class='card card-horizontal'>
+						<div class='card-contents'>
+							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Scale your business quickly</h3>
+							<div class='excerpt'><p>Grows with you. Adding a new user is as simple as buying an additional license. </p></div>
+						</div>
+					</div>
+				</div>
             </div>
           </div>
         </div>
@@ -229,20 +287,20 @@
       <section>
         <div class='app-wrapper'>
           <div class='ms-Grid'>
-            <div class='ms-Grid-row'>
-              <div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
-                <h2 class="ms-font-su" style="margin-top:0px;">Looking for answers…</h2>
-                <p class="ms-font-xxl">Contact our GitBit Professional Support Team with any questions you may have regarding Office 365 – whether it be during the transition, configuration, or post-setup, we’re here to help!</p>
-                <a href="/contact" class="ms-Button ms-Button--primary no-decoration">
-                  <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--Mail"></i></span>
-                  <span class="ms-Button-label">Submit Question</span>
-                </a>
-              </div>
+            <div class='ms-Grid-row ms-u-textAlignCenter'>
+				<div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4 ms-u-lgPush4 grey-background margins">
+					<div><h3 class="ms-font-xxl">Yes, send me more information</h3></div>
+					<div class="fiber-ninja-form">
+						<?php echo do_shortcode("[ninja_form id=6]"); ?>
+					</div>
+				</div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+	<?php get_template_part( 'template-parts/cta-header' ); ?>
 
     <?php get_footer(); ?>
   </div>
