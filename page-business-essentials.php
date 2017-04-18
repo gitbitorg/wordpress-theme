@@ -31,7 +31,7 @@
                   <div><i class="ms-Icon ms-Icon--Heart card-icon color-o365" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Retain clients</h2>
-                    <div class='excerpt ms-font-xl'>Top performing firms don't wait for clients. Engage your clients and grow your business without the administrative overhead.</div>
+                    <div class='excerpt ms-font-xl'>Use intelligent technologies to visualize data and compose a more authentic, personalized experience building more loyal, profitable customer relationships without the administrative overhead.</div>
                   </div>
                 </div>
               </div>
@@ -46,10 +46,10 @@
               </div>
               <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
                 <div class="card ms-u-textAlignCenter" style="max-width:350px;">
-                  <div><i class="ms-Icon ms-Icon--CompassNW card-icon color-blue" aria-hidden="true"></i></div>
+                  <div><i class="ms-Icon ms-Icon--PieDouble card-icon color-blue" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Outperform competitors</h2>
-                    <div class='excerpt ms-font-xl'>Smart productivity tools provide guidance to help your firm stay on task in order to do great work more quickly.</div>
+                    <div class='excerpt ms-font-xl'>Data reigns in today's business environment - anticipate market needs, imagine new offerings, and differentiate in the marketplace.</div>
                   </div>
                 </div>
               </div>
@@ -118,14 +118,6 @@
 						</div>
 						<div class="ms-Grid-col ms-u-sm11">
 							<p class="ms-font-xl">We'll never stop working for you. By continually improving and adding features your firm will become a leader in the industry.</p>
-						</div>
-					</div>
-					<div class='ms-Grid-row'>
-						<div class="ms-Grid-col ms-u-sm1 ms-u-textAlignRight">
-							<p class="ms-font-xxl color-green"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></p>
-						</div>
-						<div class="ms-Grid-col ms-u-sm11">
-							<p class="ms-font-xl">Improve your ROI with education, knowledge base articles, and expert support for the tools you're using.</p>
 						</div>
 					</div>
 				</div>
@@ -260,7 +252,7 @@
 					<div class='card card-horizontal'>
 						<div class='card-contents'>
 							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Work better together</h3>
-							<div class='excerpt'><p>business-class email, shared calendars, IM, web conferencing, and access to the most up-to-date documents stored in the cloud. You can work together in real time without compromising security.</p></div>
+							<div class='excerpt'><p>Business-class email, shared calendars, IM, web conferencing, and access to the most up-to-date documents stored in the cloud. You can work together in real time without compromising security.</p></div>
 						</div>
 					</div>
 				</div>
@@ -268,7 +260,7 @@
 					<div class='card card-horizontal'>
 						<div class='card-contents'>
 							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Reduce your capital expenditure</h3>
-							<div class='excerpt'><p>Office 365 is available as a simple monthly subscription. Avoid large up-front costs for new software while moving the cost of IT from capital to operating expense.</p></div>
+							<div class='excerpt'><p>Available as a simple monthly subscription. Avoid large up-front costs for new software while moving the cost of IT from capital to operating expense.</p></div>
 						</div>
 					</div>
 				</div>
@@ -276,7 +268,7 @@
 					<div class='card card-horizontal'>
 						<div class='card-contents'>
 							<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Scale your business quickly</h3>
-							<div class='excerpt'><p>Grows with you. Adding a new user is as simple as buying an additional license. </p></div>
+							<div class='excerpt'><p>Designed with scalibility in mind. Today's top firms need to grow and adapt faster than ever. Business Essentials is designed around your growing needs without large costs.</p></div>
 						</div>
 					</div>
 				</div>
