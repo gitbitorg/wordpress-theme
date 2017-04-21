@@ -4,13 +4,13 @@
       <div class='ms-Grid-row'>
         <section class="ms-Grid-col ms-u-sm3">
           <div class="ms-u-hiddenLgUp site-logo">
-            <a href="<?php bloginfo( 'wpurl' );?>">
-              <img src='<?php bloginfo('template_directory'); ?>/assets/GitBit-logo-50x50.png' alt='GitBit' height='40' width='40' class='logo'/>
+            <a href="<?php echo esc_url( site_url() );?>">
+              <img src='<?php echo esc_url( get_template_directory_uri() )  ?>/assets/GitBit-logo-50x50.png' alt='GitBit' height='40' width='40' class='logo'/>
             </a>
           </div>
           <div class="ms-u-hiddenMdDown site-logo">
-            <a href="<?php bloginfo( 'wpurl' );?>">
-              <img src='<?php bloginfo('template_directory'); ?>/assets/GitBit-logo-50x50.png' alt='GitBit' height='40' width='40' class='logo'/>
+            <a href="<?php echo esc_url( site_url() ); ?>">
+              <img src='<?php echo esc_url( get_template_directory_uri() )  ?>/assets/GitBit-logo-50x50.png' alt='GitBit' height='40' width='40' class='logo'/>
               <span class='ms-font-xxl site-title'><?php echo get_bloginfo( 'name' ); ?></span>
             </a>
           </div>

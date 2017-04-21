@@ -18,7 +18,7 @@
 			</div>
 			<div class="ms-CommandBar-mainArea">
 				<div class="ms-CommandButton ms-CommandButton--noLabel">
-					<img src='<?php bloginfo('template_directory'); ?>/assets/GitBit-logo-50x50.png' alt='GitBit' height='34' width='34' class='logo  ms-u-hiddenSm'/>
+					<img src='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/GitBit-logo-50x50.png' alt='GitBit' height='34' width='34' class='logo  ms-u-hiddenSm'/>
 				</div>
 				<div class="ms-CommandButton">
 					<a class="ms-CommandButton-button" href="tel:+15555555555" title="call (555) 555-5555">

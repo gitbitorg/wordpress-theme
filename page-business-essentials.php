@@ -8,7 +8,7 @@
     <?php get_header(); ?>
 
     <main class='homepage'>
-      <section class="hero" style='background-image:url("<?php echo bloginfo('template_directory'); ?>/assets/images/business-suit.jpg");'>
+      <section class="hero" style='background-image:url("<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/business-suit.jpg");'>
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
@@ -63,13 +63,13 @@
             <div class='ms-Grid-row'>
 				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
 					<blockquote>
-						<img class="quotemark" src="<?php echo bloginfo('template_directory'); ?>/assets/images/open-quote.png" />
+						<img class="quotemark" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/open-quote.png" />
 						<h3 class="ms-font-xxl quote">the main tool that enables our company to <strong class="color-blue">lead the way</strong> in the new digital era.</h3>
 					</blockquote>
 				</div>
   				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
 					<blockquote>
-						<img class="quotemark" src="<?php echo bloginfo('template_directory'); ?>/assets/images/open-quote.png" />
+						<img class="quotemark" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/open-quote.png" />
 						<h3 class="ms-font-xxl quote">As our company continues to grow we can <strong class="color-blue">scale without having to worry</strong>.</h3>
 					</blockquote>
 				</div>
@@ -88,11 +88,11 @@
             <div class='ms-Grid-row'>
 				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6 ms-u-textAlignCenter">
 					<div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
-						<img class="hero-image" src="<?php echo bloginfo('template_directory'); ?>/assets/images/cindy.jpg" alt="Women smiling" width="30%"/>
+						<img class="hero-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cindy.jpg" alt="Women smiling" width="30%"/>
 					</div>
 					<div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
-						<img class="hero-image" src="<?php echo bloginfo('template_directory'); ?>/assets/images/charles.jpg" alt="Model" width=30%" style="border-radius:50%" />
-						<img class="hero-image" src="<?php echo bloginfo('template_directory'); ?>/assets/images/dave.jpg" alt="Man on Microsoft Surface" width="30%"/>
+						<img class="hero-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/charles.jpg" alt="Model" width=30%" style="border-radius:50%" />
+						<img class="hero-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dave.jpg" alt="Man on Microsoft Surface" width="30%"/>
 					</div>
 				</div>
 				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
@@ -150,7 +150,7 @@
 						<div class="tile tile-250 with-link">
 							<a href="/business-essentials/online-meetings" class="no-style">
 								<div class="tile-image">
-									<img src="<?php echo bloginfo('template_directory'); ?>/assets/images/meeting-iconx96.png" alt="Microsoft OneDrive" />
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/meeting-iconx96.png" alt="Microsoft OneDrive" />
 								</div>
 								<div class="tile-caption">
 									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Online meetings</h3>

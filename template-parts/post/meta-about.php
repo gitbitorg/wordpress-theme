@@ -17,8 +17,8 @@
     <span itemprop="name">GitBit</span>
     <span itemprop="url" content="http://gitbit.org/"></span>
     <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/gitbit-logo-160x60.png">
-      <meta itemprop="url" content="<?php bloginfo('template_directory'); ?>/assets/gitbit-logo-160x60.png">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gitbit-logo-160x60.png">
+      <meta itemprop="url" content="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gitbit-logo-160x60.png">
       <meta itemprop="width" content="160">
       <meta itemprop="height" content="60">
     </div>

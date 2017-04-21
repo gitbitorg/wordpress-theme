@@ -26,9 +26,14 @@ if ( post_password_required() ) {
 								'style'       => 'ol',
 								'short_ping'  => true,
 								'avatar_size' => 56,
+								'per_page' => 5
 							) );
 						?>
 					</ol>
+					
+					<div class="pagination">
+						<?php paginate_comments_links(); ?>
+					</div>
 				<?php endif; // have_comments() ?>
 			</div>
 
