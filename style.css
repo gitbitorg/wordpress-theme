@@ -105,12 +105,14 @@ main.category section {
   margin-top: 60px;
 }
 
-.alignright {
+.alignright, .wp-caption.alignright {
     float: right;
+    margin-left: 10px;
 }
 
-.alignleft {
+.alignleft, .wp-caption.alignleft {
     float: left;
+    margin-right: 10px;
 }
 
 .aligncenter {
