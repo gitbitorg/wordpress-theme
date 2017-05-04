@@ -181,12 +181,12 @@
 						</div>
 
 						<div class="tile tile-250 with-link">
-							<a href="/business-essentials/private-social-network" class="no-style">
+							<a href="/business-essentials/cloud-document-management" class="no-style">
 								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--SocialListeningLogo color-teal" aria-hidden="true"></i>
+									<i class="ms-Icon ms-Icon--DocLibrary color-teal" aria-hidden="true"></i>
 								</div>
 								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Private social network</h3>
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Cloud document management</h3>
 								</div>
 							</a>
 						</div>
