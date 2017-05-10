@@ -245,4 +245,19 @@ function analytics_footer() {
     get_template_part( 'template-parts/meta/google-analytics' );
 }
 add_action( 'wp_footer', 'analytics_footer' );
+
+function create_post_type() {
+  register_post_type( 'gitbit_product',
+    array(
+      'labels' => array(
+        'name' => __( 'Products' ),
+        'singular_name' => __( 'Product' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'product')
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
 ?>
