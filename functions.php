@@ -109,8 +109,6 @@ function show_fabric_meta_box() {
 	</p>
 <?php }
 
-
-
 function save_your_fields_meta( $post_id ) {
 	if ( !isset( $_POST['fabric_nonce'] ) || !wp_verify_nonce( $_POST['fabric_nonce'], basename( __FILE__ ) ) )
 		return $post_id;
@@ -247,17 +245,159 @@ function analytics_footer() {
 add_action( 'wp_footer', 'analytics_footer' );
 
 function create_post_type() {
-  register_post_type( 'gitbit_product',
-    array(
-      'labels' => array(
-        'name' => __( 'Products' ),
-        'singular_name' => __( 'Product' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'product')
-    )
-  );
+	register_post_type( 'gitbit_product',
+		array(
+			'labels' => array(
+				'name' => __( 'Products' ),
+				'singular_name' => __( 'Product' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'product'),
+			'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes')
+		)
+	);
+
+	register_taxonomy('gitbit_product_topic', 'gitbit_product', array(
+		'labels' => array(
+			'name' => 'Topic',
+			'add_new_item' => 'Add New Topic',
+			'new_item_name' => "New Topic Type"
+		),
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'hierarchical' => true
+	));
+
+	register_taxonomy('gitbit_product_feature', 'gitbit_product', array(
+		'labels' => array(
+			'name' => 'Features',
+			'add_new_item' => 'Add New Feature',
+			'new_item_name' => "New Feature Type"
+		),
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'hierarchical' => true
+	));
+
+	register_taxonomy('gitbit_product_integration', 'gitbit_product', array(
+		'labels' => array(
+			'name' => 'Integrations',
+			'add_new_item' => 'Add New Integration',
+			'new_item_name' => "New Integration Type"
+		),
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'hierarchical' => true
+	));
+
+	register_taxonomy('gitbit_product_devices', 'gitbit_product', array(
+		'labels' => array(
+			'name' => 'Device support',
+			'add_new_item' => 'Add New Device',
+			'new_item_name' => "New Device Type"
+		),
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'hierarchical' => true
+	));
+
+	register_taxonomy('gitbit_product_services', 'gitbit_product', array(
+		'labels' => array(
+			'name' => 'Services',
+			'add_new_item' => 'Add New Service',
+			'new_item_name' => "New Service Type"
+		),
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'hierarchical' => true
+	));
+
+	register_taxonomy('gitbit_product_practices', 'gitbit_product', array(
+		'labels' => array(
+			'name' => 'Practice Area',
+			'add_new_item' => 'Add New Practice Area',
+			'new_item_name' => "New Practice Area Type"
+		),
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'hierarchical' => true
+	));
 }
 add_action( 'init', 'create_post_type' );
+
+function customize_gitbit_product() {
+	add_meta_box(
+		'gitbit_product_meta_box', // $id
+		'GitBit Product Details', // $title
+		'show_gitbit_product_meta_box', // $callback
+		'gitbit_product', // $screen
+		'normal', // $context
+		'high' // $priority
+	);
+}
+
+add_action( 'add_meta_boxes', 'customize_gitbit_product' );
+
+function show_gitbit_product_meta_box() {
+	global $post;
+	$meta = get_post_meta( $post->ID, 'gitbit_product', true );
+	$slideshare = "";
+	$video = "";
+	$quote1 = "";
+	$quote2 = "";
+	if  (!empty( $meta )) { 
+		$slideshare = esc_attr($meta['slideshare']);
+		$video = esc_attr($meta['video']);
+		$quote1 = esc_attr($meta['quote1']);
+		$quote2 = esc_attr($meta['quote2']);
+	}
+	?>
+
+	<input type="hidden" name="gitbit_product_nonce" value="<?php echo wp_create_nonce( basename(__FILE__) ); ?>">
+
+	<p>
+		<label for="gitbit_product[slideshare]">SlideShare URL</label><br>
+		<input type="text" name="gitbit_product[slideshare]" id="gitbit_product[slideshare]" class="regular-text" value="<?php echo $slideshare ?>">
+	</p>
+	<p>
+		<label for="gitbit_product[video]">Video URL</label><br>
+		<input type="text" name="gitbit_product[video]" id="gitbit_product[video]" class="regular-text" value="<?php echo $video ?>">
+	</p>
+	<p>
+		<label for="gitbit_product[quote1]">Quote 1</label><br>
+		<input type="text" name="gitbit_product[quote1]" id="gitbit_product[quote1]" class="regular-text" value="<?php echo $quote1 ?>">
+	</p>
+	<p>
+		<label for="gitbit_product[quote2]">Quote 2</label><br>
+		<input type="text" name="gitbit_product[quote2]" id="gitbit_product[quote2]" class="regular-text" value="<?php echo $quote2 ?>">
+	</p>
+<?php }
+
+function save_gitbit_product_fields_meta( $post_id ) {
+	if ( !isset( $_POST['gitbit_product_nonce'] ) || !wp_verify_nonce( $_POST['gitbit_product_nonce'], basename( __FILE__ ) ) )
+		return $post_id;
+
+	// check autosave
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return $post_id;
+	}
+	// check permissions
+	if ( 'gitbit_product' === $_POST['post_type'] ) {
+		if ( !current_user_can( 'edit_post', $post_id ) ) {
+			return $post_id;
+		}
+	}
+
+	$old = get_post_meta( $post_id, 'gitbit_product', true );
+	$new = $_POST['gitbit_product'];
+
+	if ( $new && $new !== $old ) {
+		update_post_meta( $post_id, 'gitbit_product', $new );
+	} elseif ( '' === $new && $old ) {
+		delete_post_meta( $post_id, 'gitbit_product', $old );
+	}
+}
+add_action( 'save_post', 'save_gitbit_product_fields_meta' );
+
 ?>

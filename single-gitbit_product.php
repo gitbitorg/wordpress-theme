@@ -10,6 +10,8 @@
 		<?php get_header(); ?>
 
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php $product = get_post_meta($post->ID, 'gitbit_product', true); ?>
+			<?php echo $product['slideshare'] ?>
 			<main>
 				<?php the_content(); ?>
 			</main>
