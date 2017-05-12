@@ -148,13 +148,6 @@
 							<div class="ms-Grid-col ms-u-sm12">
 								<ul class="integrations ms-Grid-row ms-font-xl">
 									<?php 
-										the_terms( $post->ID, 'gitbit_product_integration', 
-											'<li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i>',
-											'</li><li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i>',
-											'</li>'
-										);
-									?>
-									<?php 
 										$integrations = wp_get_object_terms($post->ID, 'gitbit_product_integration');
 										if ( ! empty( $integrations ) ) {
 											if ( ! is_wp_error( $integrations ) ) {
