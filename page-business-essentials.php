@@ -22,7 +22,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="hero">
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
@@ -276,7 +276,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="hero">
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row ms-u-textAlignCenter'>

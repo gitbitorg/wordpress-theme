@@ -635,14 +635,11 @@ footer.sticky {
 }
 
 .hero {
-  position: relative;
-  overflow: hidden;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero.grey-background {
+    position: relative;
+    overflow: hidden;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -659,10 +656,6 @@ footer.sticky {
 
 .hero header h1 {
   margin-top: 0px;
-}
-
-.homepage section + section {
-  margin-top: 60px;
 }
 
 blockquote .quotemark {
@@ -750,4 +743,34 @@ header.fixed {
 
 header.fixed .logo {
     margin-top: 3px;
+}
+
+.product-page .topic a {
+    text-decoration: none;
+    color: rgba(0,0,0,.75);
+}
+
+.product-page .title {
+    margin: 0px;
+}
+
+.product-page .excerpt p {
+    margin-top: 0;
+}
+
+.product-page .icon-list {
+    list-style: none;
+    line-height: 50px;
+}
+
+.product-page .icon-list i {
+    padding-right: 14px;
+    font-size: 35px;
+}
+
+.product-page .icon-list a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
 }
