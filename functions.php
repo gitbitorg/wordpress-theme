@@ -266,7 +266,8 @@ function create_post_type() {
 		),
 		'show_ui' => true,
 		'show_tagcloud' => false,
-		'hierarchical' => true
+		'hierarchical' => true,
+		'public' => false
 	));
 
 	register_taxonomy('gitbit_product_feature', 'gitbit_product', array(
@@ -288,7 +289,8 @@ function create_post_type() {
 		),
 		'show_ui' => true,
 		'show_tagcloud' => false,
-		'hierarchical' => true
+		'hierarchical' => true,
+		'rewrite' => array( 'slug' => 'products/integrations' )
 	));
 
 	register_taxonomy('gitbit_product_devices', 'gitbit_product', array(
@@ -299,7 +301,8 @@ function create_post_type() {
 		),
 		'show_ui' => true,
 		'show_tagcloud' => false,
-		'hierarchical' => true
+		'hierarchical' => true,
+		'rewrite' => array( 'slug' => 'products/devices' )
 	));
 
 	register_taxonomy('gitbit_product_services', 'gitbit_product', array(

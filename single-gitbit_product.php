@@ -14,7 +14,16 @@
 			<main class="ms-Grid product-page">
 				<header class="hero ms-Grid-row ms-u-textAlignCenter app-wrapper">
 					<div class="topic ms-Grid-col ms-u-sm12 ms-fontSize-sPlus ms-fontWeight-semilight">
-						<?php the_terms( $post->ID, 'gitbit_product_topic', '', ' / ' ); ?>
+						<?php 
+							$topics = wp_get_object_terms($post->ID, 'gitbit_product_topic');
+							if ( ! empty( $topics ) ) {
+								if ( ! is_wp_error( $topics ) ) {
+									foreach( $topics as $topic ) {
+										echo $topic->name;
+									}
+								}
+							}
+						?>
 					</div>
 					<div class="ms-Grid-col ms-u-sm12">
 						<h1 class="title ms-font-su"><?php the_title(); ?></h1>
@@ -41,11 +50,14 @@
 						</div>
 						<ul class="features ms-Grid-row ms-font-xl">
 							<?php 
-								the_terms( $post->ID, 'gitbit_product_feature', 
-									'<li class="feature icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-textAlignCenter"><i class="ms-Icon ms-Icon--CheckMark color-green" aria-hidden="true"></i>',
-									'</li><li class="feature icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-textAlignCenter"><i class="ms-Icon ms-Icon--CheckMark color-green" aria-hidden="true"></i>',
-									'</li>'
-								);
+								$features = wp_get_object_terms($post->ID, 'gitbit_product_feature');
+								if ( ! empty( $features ) ) {
+									if ( ! is_wp_error( $features ) ) {
+										foreach( $features as $feature ) {
+											echo '<li class="feature icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-textAlignCenter"><i class="ms-Icon ms-Icon--CheckMark color-green" aria-hidden="true"></i><span>' . $feature->name . '</span></li>';
+										}
+									}
+								}
 							?>
 						</ul>
 					</div>
@@ -97,35 +109,29 @@
 					<div class="app-wrapper">
 						<div class="ms-Grid-row">
 							<?php   if(has_term('24/7 IT Support', 'gitbit_product_services')) { ?>
-								<div class="ms-Grid-col ms-u-sm12 ms-u-md4">
-									<div class="ms-Grid-row">
-										<div class="ms-Grid-col ms-u-sm1">
-											<h2 class="ms-font-xxl"><i class="ms-Icon ms-Icon--DeveloperTools" aria-hidden="true"></i></h2>
-										</div>
-										<div class="ms-Grid-col ms-u-sm11">
-											<h2 class="ms-font-xxl"><?php the_title(); ?> is covered under <a href="/247-it-support">24/7 IT support</a></h2>
+								<div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
+									<div class="card ms-u-textAlignCenter" style="max-width:350px;">
+										<div><i class="ms-Icon ms-Icon--DeveloperTools card-icon color-green" aria-hidden="true"></i></div>
+										<div class='card-contents'>
+										<h2 class="ms-font-su card-title"><?php the_title(); ?> is covered under <a href="/247-it-support">24/7 IT support</a></h2>
 										</div>
 									</div>
 								</div>
 							<?php } if(has_term('Business Essentials', 'gitbit_product_services')) { ?>
-								<div class="ms-Grid-col ms-u-sm12 ms-u-md4">
-									<div class="ms-Grid-row">
-										<div class="ms-Grid-col ms-u-sm1">
-											<h2 class="ms-font-xxl"><i class="ms-Icon ms-Icon--CloudWeather" aria-hidden="true"></i></h2>
-										</div>
-										<div class="ms-Grid-col ms-u-sm11">
-											<h2 class="ms-font-xxl"><?php the_title(); ?> is available as an addon for <a href="/business-essentials">Business Essentials</a></h2>
+								<div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
+									<div class="card ms-u-textAlignCenter" style="max-width:350px;">
+										<div><i class="ms-Icon ms-Icon--CloudWeather card-icon color-o365" aria-hidden="true"></i></div>
+										<div class='card-contents'>
+										<h2 class="ms-font-su card-title"><?php the_title(); ?> is available as an addon for <a href="/business-essentials">Business Essentials</a></h2>
 										</div>
 									</div>
 								</div>
 							<?php } if(has_term('Consulting', 'gitbit_product_services')) { ?>
-								<div class="ms-Grid-col ms-u-sm12 ms-u-md4">
-									<div class="ms-Grid-row">
-										<div class="ms-Grid-col ms-u-sm1">
-											<h2 class="ms-font-xxl"><i class="ms-Icon ms-Icon--PartyLeader" aria-hidden="true"></i></h2>
-										</div>
-										<div class="ms-Grid-col ms-u-sm11">
-											<h2 class="ms-font-xxl">Contact our <a href="/consulting">Digital Advisors</a> to schedule a demo or find the right package for you</h2>
+								<div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
+									<div class="card ms-u-textAlignCenter" style="max-width:350px;">
+										<div><i class="ms-Icon ms-Icon--PartyLeader card-icon color-blue" aria-hidden="true"></i></div>
+										<div class='card-contents'>
+										<h2 class="ms-font-su card-title">Contact our <a href="/consulting">Digital Advisors</a> to schedule a demo or find the right package for you</h2>
 										</div>
 									</div>
 								</div>
@@ -143,10 +149,20 @@
 								<ul class="integrations ms-Grid-row ms-font-xl">
 									<?php 
 										the_terms( $post->ID, 'gitbit_product_integration', 
-											'<li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-textAlignCenter"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i>',
-											'</li><li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-textAlignCenter"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i>',
+											'<li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i>',
+											'</li><li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i>',
 											'</li>'
 										);
+									?>
+									<?php 
+										$integrations = wp_get_object_terms($post->ID, 'gitbit_product_integration');
+										if ( ! empty( $integrations ) ) {
+											if ( ! is_wp_error( $integrations ) ) {
+												foreach( $integrations as $integration ) {
+													echo '<li class="integration icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4"><i class="ms-Icon ms-Icon--Link color-green" aria-hidden="true"></i><span>' . $integration->name . '</span></li>';
+												}
+											}
+										}
 									?>
 								</ul>
 							</div>

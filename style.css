@@ -768,7 +768,7 @@ header.fixed .logo {
     font-size: 35px;
 }
 
-.product-page .icon-list a {
+.product-page .icon-list a, .product-page .icon-list span {
     text-decoration: none;
     color: black;
     display: inline-block;
