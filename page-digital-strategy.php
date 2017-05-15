@@ -157,71 +157,59 @@
             <div class='ms-Grid-row'>
 				<div class="ms-Grid-col ms-u-sm12">
 					<div class="tile-container">
-						<div class="tile tile-250 with-link">
-							<a href="/consulting/it-strategy" class="no-style">
-								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--Search color-o365" aria-hidden="true"></i>
-								</div>
-								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Assessment</h3>
-								</div>
-							</a>
+						<div class="tile tile-250">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--Search color-o365" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Assessment</h3>
+							</div>
 						</div>
 
-						<div class="tile tile-250 with-link">
-							<a href="/consulting/innovative-solutions" class="no-style">
-								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--DocumentSearch color-green" aria-hidden="true"></i>
-								</div>
-								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Assessment review</h3>
-								</div>
-							</a>
+						<div class="tile tile-250">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--DocumentSearch color-green" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Assessment review</h3>
+							</div>
 						</div>
 
-						<div class="tile tile-250 with-link">
-							<a href="/consulting/people-and-talent" class="no-style">
-								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--CheckList color-blue" aria-hidden="true"></i>
-								</div>
-								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Goal planning</h3>
-								</div>
-							</a>
+						<div class="tile tile-250">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--CheckList color-blue" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Goal planning</h3>
+							</div>
 						</div>
 					</div>
 					<div class='ms-Grid-row ms-u-textAlignCenter'>
-						<div class="tile tile-250 with-link">
-							<a href="/consulting/digital-marketing" class="no-style">
-								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--Teamwork color-teal" aria-hidden="true"></i>
-								</div>
-								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Accountability</h3>
-								</div>
-							</a>
+						<div class="tile tile-250">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--Teamwork color-teal" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Accountability</h3>
+							</div>
 						</div>
 
-						<div class="tile tile-250 with-link">
-							<a href="/consulting/cloud-computing" class="no-style">
-								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
-								</div>
-								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Implementation</h3>
-								</div>
-							</a>
+						<div class="tile tile-250">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Implementation</h3>
+							</div>
 						</div>
 
-						<div class="tile tile-250 with-link">
-							<a href="/consulting/cloud-computing" class="no-style">
-								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--Chart color-o365" aria-hidden="true"></i>
-								</div>
-								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Training & refinement</h3>
-								</div>
-							</a>
+						<div class="tile tile-250">
+							<div class="tile-image">
+								<i class="ms-Icon ms-Icon--Chart color-o365" aria-hidden="true"></i>
+							</div>
+							<div class="tile-caption">
+								<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Training & refinement</h3>
+							</div>
 						</div>
 					</div>
 				</div>
