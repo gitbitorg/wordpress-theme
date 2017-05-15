@@ -7,14 +7,14 @@
   <div class='site'>
     <?php get_header(); ?>
 
-    <main class='homepage'>
+    <main class='digital-strategy'>
       <section class="hero" style='background-image:url("<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/business-suit.jpg");'>
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
               <header class="ms-Grid-col ms-u-sm11 ms-u-lg8 ms-u-lgPush2 color-white" style="background: rgba(33, 33, 33, .95);">
 				<div class="ms-u-textAlignCenter">
-					<h1 class="ms-font-su">Consulting</h1>
+					<h1 class="ms-font-su">Digital strategy</h1>
 					<span class="subtitle ms-font-xxl">Grow. Optimize. Compete.</span>
 				</div>
               </header>
@@ -22,34 +22,52 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="hero">
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row'>
-              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
+              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4">
                 <div class="card ms-u-textAlignCenter" style="max-width:350px;">
-                  <div><i class="ms-Icon ms-Icon--Heart card-icon color-o365" aria-hidden="true"></i></div>
+                  <div><i class="ms-Icon ms-Icon--PieDouble card-icon color-green" aria-hidden="true"></i></div>
                   <div class='card-contents'>
-                    <h2 class="ms-font-su card-title">Obtain expert insight</h2>
+                    <h2 class="ms-font-su card-title">Reduce costs</h2>
                     <div class='excerpt ms-font-xl'>Work with professionals to assess your companies needs. Learn how to better utlize technology and services to provide additional value. Follow through with these processes with expert guidance along the way.</div>
                   </div>
                 </div>
               </div>
-              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
+              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4">
                 <div class="card ms-u-textAlignCenter" style="max-width:350px;">
-                  <div><i class="ms-Icon ms-Icon--Chart card-icon color-green" aria-hidden="true"></i></div>
+                  <div><i class="ms-Icon ms-Icon--SecurityGroup card-icon color-o365" aria-hidden="true"></i></div>
                   <div class='card-contents'>
-                    <h2 class="ms-font-su card-title">Gain leverage over competitors</h2>
+                    <h2 class="ms-font-su card-title">Mitigate risks</h2>
                     <div class='excerpt ms-font-xl'>Discover new ways your business can gain an advatage over competitors. Improve best practices, implement innovative solutions, and achieve benchmarks more efficiently.</div>
                   </div>
                 </div>
               </div>
-              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-lg4">
+              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4">
                 <div class="card ms-u-textAlignCenter" style="max-width:350px;">
-                  <div><i class="ms-Icon ms-Icon--PieDouble card-icon color-blue" aria-hidden="true"></i></div>
+                  <div><i class="ms-Icon ms-Icon--Flow card-icon color-blue" aria-hidden="true"></i></div>
                   <div class='card-contents'>
-                    <h2 class="ms-font-su card-title">Remain focused</h2>
+                    <h2 class="ms-font-su card-title">Streamline processes</h2>
                     <div class='excerpt ms-font-xl'>Tasks such as finding the right talent, staying up to date with technology, and keeping up on digital marketing can be extremely time consuming and distracting. Streamlining or outsourcing these processes will help you stay focused on your company goals.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-xlPush2">
+                <div class="card ms-u-textAlignCenter" style="max-width:350px;">
+                  <div><i class="ms-Icon ms-Icon--Chart card-icon color-green" aria-hidden="true"></i></div>
+                  <div class='card-contents'>
+                    <h2 class="ms-font-su card-title">Promote growth</h2>
+                    <div class='excerpt ms-font-xl'>Discover new ways your business can gain an advatage over competitors. Improve best practices, implement innovative solutions, and achieve benchmarks more efficiently.</div>
+                  </div>
+                </div>
+              </div>
+			  <div class="ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-xlPush2">
+                <div class="card ms-u-textAlignCenter" style="max-width:350px;">
+                  <div><i class="ms-Icon ms-Icon--WorkFlow card-icon color-o365" aria-hidden="true"></i></div>
+                  <div class='card-contents'>
+                    <h2 class="ms-font-su card-title">Modernize technology</h2>
+                    <div class='excerpt ms-font-xl'>Work with professionals to assess your companies needs. Learn how to better utlize technology and services to provide additional value. Follow through with these processes with expert guidance along the way.</div>
                   </div>
                 </div>
               </div>
@@ -133,7 +151,7 @@
           <div class='ms-Grid'>
 			<div class="ms-Grid-row">
 				<div class="ms-Grid-col ms-u-sm12 ms-u-textAlignCenter">
-					<h2 class="ms-font-xxl">Consulting services</h2>
+					<h2 class="ms-font-xxl">Digital strategy workflow</h2>
 				</div>
 			</div>
             <div class='ms-Grid-row'>
@@ -142,10 +160,10 @@
 						<div class="tile tile-250 with-link">
 							<a href="/consulting/it-strategy" class="no-style">
 								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--Mail color-green" aria-hidden="true"></i>
+									<i class="ms-Icon ms-Icon--Search color-o365" aria-hidden="true"></i>
 								</div>
 								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">IT Strategy</h3>
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Assessment</h3>
 								</div>
 							</a>
 						</div>
@@ -153,10 +171,10 @@
 						<div class="tile tile-250 with-link">
 							<a href="/consulting/innovative-solutions" class="no-style">
 								<div class="tile-image">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/meeting-iconx96.png" alt="Microsoft OneDrive" />
+									<i class="ms-Icon ms-Icon--DocumentSearch color-green" aria-hidden="true"></i>
 								</div>
 								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Innovative Solutions</h3>
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Assessment review</h3>
 								</div>
 							</a>
 						</div>
@@ -164,10 +182,10 @@
 						<div class="tile tile-250 with-link">
 							<a href="/consulting/people-and-talent" class="no-style">
 								<div class="tile-image">
-									<img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/png/onedrive_96x1.png" alt="Microsoft OneDrive" />
+									<i class="ms-Icon ms-Icon--CheckList color-blue" aria-hidden="true"></i>
 								</div>
 								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">People and Talent</h3>
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Goal planning</h3>
 								</div>
 							</a>
 						</div>
@@ -176,10 +194,10 @@
 						<div class="tile tile-250 with-link">
 							<a href="/consulting/digital-marketing" class="no-style">
 								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--ChatInviteFriend" aria-hidden="true"></i>
+									<i class="ms-Icon ms-Icon--Teamwork color-teal" aria-hidden="true"></i>
 								</div>
 								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Digital Marketing</h3>
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Accountability</h3>
 								</div>
 							</a>
 						</div>
@@ -187,10 +205,21 @@
 						<div class="tile tile-250 with-link">
 							<a href="/consulting/cloud-computing" class="no-style">
 								<div class="tile-image">
-									<i class="ms-Icon ms-Icon--SocialListeningLogo color-teal" aria-hidden="true"></i>
+									<i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
 								</div>
 								<div class="tile-caption">
-									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Cloud Computing</h3>
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Implementation</h3>
+								</div>
+							</a>
+						</div>
+
+						<div class="tile tile-250 with-link">
+							<a href="/consulting/cloud-computing" class="no-style">
+								<div class="tile-image">
+									<i class="ms-Icon ms-Icon--Chart color-o365" aria-hidden="true"></i>
+								</div>
+								<div class="tile-caption">
+									<h3 class="ms-font-xl ms-u-textAlignCenter no-margin">Training & refinement</h3>
 								</div>
 							</a>
 						</div>
@@ -200,7 +229,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="hero">
         <div class='app-wrapper'>
           <div class='ms-Grid'>
             <div class='ms-Grid-row ms-u-textAlignCenter'>

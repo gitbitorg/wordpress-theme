@@ -253,7 +253,7 @@ function create_post_type() {
 			),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => 'product'),
+			'rewrite' => array('slug' => 'legal-products'),
 			'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes')
 		)
 	);
