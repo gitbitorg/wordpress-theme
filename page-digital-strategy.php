@@ -49,7 +49,7 @@
                   <div><i class="ms-Icon ms-Icon--Flow card-icon color-blue" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Streamline processes</h2>
-                    <div class='excerpt ms-font-xl'>Tasks such as finding the right talent, staying up to date with technology, and keeping up on digital marketing can be extremely time consuming and distracting. Streamlining or outsourcing these processes will help you stay focused on your company goals.</div>
+                    <div class='excerpt ms-font-xl'>Draft Legal documents more efficiently. Utilize modern technologies such as voice-to-text and digital signature integration. Simplify the organization, tracking, and sharing of documents.</div>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@
                   <div><i class="ms-Icon ms-Icon--Chart card-icon color-green" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Promote growth</h2>
-                    <div class='excerpt ms-font-xl'>Discover new ways your business can gain an advatage over competitors. Improve best practices, implement innovative solutions, and achieve benchmarks more efficiently.</div>
+                    <div class='excerpt ms-font-xl'>Expand your Firms outreach through Digital Marketing. Stretch your current infrastructure or scale out with additional hardware to support company growth.</div>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@
                   <div><i class="ms-Icon ms-Icon--WorkFlow card-icon color-o365" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Modernize technology</h2>
-                    <div class='excerpt ms-font-xl'>Work with professionals to assess your companies needs. Learn how to better utlize technology and services to provide additional value. Follow through with these processes with expert guidance along the way.</div>
+                    <div class='excerpt ms-font-xl'>Attain a competitive advantage with the integration of modern technologies. Track billable hours more accurately and with ease. Manage tasks, cases, scheduling, and more.</div>
                   </div>
                 </div>
               </div>
@@ -82,13 +82,13 @@
 				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
 					<blockquote>
 						<img class="quotemark" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/open-quote.png" />
-						<h3 class="ms-font-xxl quote">Expert consulting helped us feel more prepared to <strong class="color-blue">meet our deliverables</strong>.</h3>
+						<h3 class="ms-font-xxl quote">True visionaries working to <strong class="color-blue">reshape the legal industry</strong> with technology.</h3>
 					</blockquote>
 				</div>
   				<div class="ms-Grid-col ms-u-sm12 ms-u-xl6">
 					<blockquote>
 						<img class="quotemark" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/open-quote.png" />
-						<h3 class="ms-font-xxl quote">The consultants were <strong class="color-blue">focused and flexible</strong> throughout the entire process.</h3>
+						<h3 class="ms-font-xxl quote">Digital Strategy experts helped us implement an <strong class="color-blue">affordable and powerful Case Management Solution</strong> that accomplished everything we needed.</h3>
 					</blockquote>
 				</div>
             </div>
