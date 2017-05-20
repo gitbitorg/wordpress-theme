@@ -31,7 +31,7 @@
                   <div><i class="ms-Icon ms-Icon--PieDouble card-icon color-green" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Reduce costs</h2>
-                    <div class='excerpt ms-font-xl'>Work with professionals to assess your companies needs. Learn how to better utlize technology and services to provide additional value. Follow through with these processes with expert guidance along the way.</div>
+                    <div class='excerpt ms-font-xl'>Gain valuable insight on the true cost of technology. Work with Trusted Advisors to assess your environment. Receive expert recommendations on ways your firm can save on IT hardware, software, and support costs.</div>
                   </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@
                   <div><i class="ms-Icon ms-Icon--SecurityGroup card-icon color-o365" aria-hidden="true"></i></div>
                   <div class='card-contents'>
                     <h2 class="ms-font-su card-title">Mitigate risks</h2>
-                    <div class='excerpt ms-font-xl'>Discover new ways your business can gain an advatage over competitors. Improve best practices, implement innovative solutions, and achieve benchmarks more efficiently.</div>
+                    <div class='excerpt ms-font-xl'>Identify, prioritize, and mitigate security risks both internal and external to your Firm. Implement technologies that promote business continuity and protect client information. Create effective Disaster recovery plans.</div>
                   </div>
                 </div>
               </div>

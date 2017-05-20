@@ -54,7 +54,7 @@
 								if ( ! empty( $features ) ) {
 									if ( ! is_wp_error( $features ) ) {
 										foreach( $features as $feature ) {
-											echo '<li class="feature icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4 ms-u-textAlignCenter"><i class="ms-Icon ms-Icon--CheckMark color-green" aria-hidden="true"></i><span>' . $feature->name . '</span></li>';
+											echo '<li class="feature icon-list ms-Grid-col ms-u-sm12 ms-u-md6 ms-u-xl4"><i class="ms-Icon ms-Icon--CheckMark color-green" aria-hidden="true"></i><span>' . $feature->name . '</span></li>';
 										}
 									}
 								}
