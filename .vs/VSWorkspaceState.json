@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\template-parts"
+    "\\template-parts",
+    "\\template-parts\\card"
   ],
-  "SelectedNode": "\\page-business-essentials.php",
+  "SelectedNode": "\\page-24-7-it-support.php",
   "PreviewInSolutionExplorer": false
 }
